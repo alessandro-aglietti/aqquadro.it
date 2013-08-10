@@ -1,0 +1,107 @@
+﻿Info
+________________
+
+
+Aglietti Alessandro - May 4, 1989 - Developer, Florence, Italy
+alessandro.aglietti@gmail.com - alessandroaglietti.com
+History
+________________
+
+
+I started university, software engineering, in September 2009.
+I studied up to June 2010, then I was hired in Global Base srl.
+Specific key accomplishments in Global Base srl
+In a first period, from June 2010, I’ve followed Google Maps technology-based projects. In this case backends are supported on LAMP.
+During these projects I’ve developed a JavaScript library for handling large amounts of markers on Google Maps and tuning these performance.
+From Jan 2011 I was assigned on all business projects developed on the Google App Engine PaaS.
+All these projects were developed are based on SOA with JAX-RS.
+Continuously I support the maintenance of our corporate LAN and Linux virtual machines hosted on VMWare ESXi.
+I’m currently training new employees, training target is the development of SOA solutions on Google App Engine and Amazon Web Services.
+Since the beginning of 2013 I’m working on enterprise portal solutions with Liferay that run on Amazon Web Services and the management of deploy with Git.
+Education
+________________
+
+
+Sept. 2004 - June, 2009 I.I.S. ITI-IPIA “Leonardo da Vinci”, Florence, Italy
+(high school) Diploma di Perito Industriale - Computer Science, rating 82/100
+Thesis of neural network: “Reti neurali artificiali - MultiLayer Perceptrons” - pdf // ppt
+Professional experience
+________________
+
+
+Jan. 2013 - April 2013, I.I.S. ITI-IPIA “Leonardo da Vinci”, Florence, Italy
+Title: Teacher of high school course to reach RESTful solutions and responsive design with PHP(Tonic/Doctrine/Twig), Bootstrap and jQuery. - sources
+
+
+October 2012, Google Dev Fest, Florence, Italy - GDG Firenze
+Title: Save ICT costs with pay as you go model - slides
+
+
+February, 2012 SSTI, Florence, Italy - www.ssti.it
+Title: Co-Teacher of entry-level course “From database to Web”
+ssti.alessandroaglietti.com
+
+
+June, 2010 - Present, Global Base srl, Calenzano, Italy - Google Enterprise Partner - www.globalbase.it
+Title: Administration and development of system integration with Google Search Appliance(e.g. front-end with XSLT), Google Maps, Google Apps, Google App Engine, Liferay and Amazon Web Services.
+
+
+
+
+
+
+Projects
+________________
+
+
+January 2011 - Present
+Title: SNOWAY for Android - www.snoway.me
+A simple cloud/mobile track tracker for snowboarder. The key features are privacy of data, SNOWAY doesn’t store any users data, and security on slopes with an integrated radar for rescue requests.
+
+
+March 2010 to September 2011
+Title: REWORCOM - REmote WORkshops of COMmunications
+Configuring servers for VC.
+Development of a web app based on GAE/J for the management of Axis PTZ cameras.
+Social and organizational skills
+________________
+
+
+1. Excellent sense of organization and project management acquired from 10 years membership in scout camps(AGESCI), 6 years acting camp counselor.
+2. Highly adaptable with a strong team spirit
+Professional skills 
+________________
+1. OS
+Debian GNU/Linux, MAC OS X
+1. Services administration
+www (Apache2/Tomcat), virtualization (VMWare ESXi), firewall (IPTABLES), NFS (SAMBA)
+1. Tool
+Git, Maven, Ant
+1. Lang
+C++, Java(focus on JAX-RS and JSTL), PHP (Tonic, Twig and Doctrine), PL/SQL, XSL, little of AS3 with Flex
+1. RDBMS / noSQL
+MySQL, Oracle with spatial extension, GAE/J Datastore
+1. Web
+Twitter Bootstrap, JavaScript with jQuery. GWT RPC and RequestBuilder for JAX-RS. Knowledge of standard issued by W3C.
+1. Mobile
+Android, PhoneGap, little of AIR
+1. PaaS and IaaS
+GAE/J, force.com (apex), AWS Elastic Beanstalk, EC2 and S3, Google Cloud SQL
+1. Networking
+CCNA Discovery: Networking for Home and Small Businesses (15/03/2008)
+CCNA Discovery: Working at a Small-to-Medium Business or ISP (17/06/2009)
+1. Google Apps for Business
+Google Apps Certified Deployment Specialist (September 28, 2011)
+1. Other
+ECDL (25/05/2008), Liferay
+
+
+
+
+Additional information
+________________
+Willing to travel for work.
+Authorized to drive class B vehicles in Europe.
+
+
+cv.alessandroaglietti.com v3.9
