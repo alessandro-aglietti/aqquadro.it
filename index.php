@@ -25,7 +25,7 @@
         <script type="text/javascript">
 			$(function(){
 				$.ajax({
-					url: "deliciuos.php"
+					url: "deliciuos.php?r=<?php echo $imageID ?>"
 				}).done(function ( data ) {
 					$("#links").children().last().remove();
 					$("#links").append(data);
