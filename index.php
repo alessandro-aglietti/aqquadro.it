@@ -17,7 +17,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Alessandro Aglietti is aqquadro: since 2004 face-to-face with a monitor. Not to write poems! Be RSS: ban social network from life for life." />
+		<meta name="description" content="Alessandro Aglietti, from Florence, is aqquadro: since 2004 face-to-face to a monitor. Not to write poems! Be RSS: ban social network from life for life." />
 		<title>Alessandro Aglietti</title>
 		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
