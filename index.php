@@ -76,7 +76,7 @@
 		</div>
 		<div id="footer">
 			<div class="container">
-				<p class="text-muted credit">Pork on <a target="_blank" href="https://github.com/alessandro-aglietti/aqquadro.it">GitHub</a></p>
+				<p class="text-muted credit"><abbr title="http://www.kopimi.com/kopimi/">kopimi</abbr> from <a target="_blank" href="https://github.com/alessandro-aglietti/aqquadro.it">GitHub</a></p>
 			</div>
 		</div>
     </body>
