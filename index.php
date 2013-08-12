@@ -42,6 +42,12 @@
 				margin: 20px 0;
 				text-align: center;
 			}
+			
+			#footer div.container {
+				background-image: url('http://www.kopimi.com/kopimi/k/mkopimi_gay.gif');
+				background-repeat: no-repeat;
+				background-position-y: 6px;
+			}
 		</style>
     </head>
     <body style="padding-top: 50px;">
@@ -70,7 +76,7 @@
 		</div>
 		<div id="footer">
 			<div class="container">
-				<p class="text-muted credit">Fork on <a target="_blank" href="https://github.com/alessandro-aglietti/aqquadro.it">GitHub</a></p>
+				<p class="text-muted credit">Pork on <a target="_blank" href="https://github.com/alessandro-aglietti/aqquadro.it">GitHub</a></p>
 			</div>
 		</div>
     </body>
