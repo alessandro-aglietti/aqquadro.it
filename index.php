@@ -5,7 +5,7 @@
 		header("Location: text.php");
 		exit();
 	}
-	$imageID = rand ( 0, 94 );
+	$imageID = rand ( 0, 95 );
 	header("Expires: Thu, 04 May 1989 14:00:00 GMT");
 	header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 	header("Cache-Control: no-store, no-cache, must-revalidate");
@@ -17,7 +17,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Alessandro Aglietti, from Florence, is aqquadro: since 2004 face-to-face to a monitor. Not to write poems! Be RSS: ban social network from life for life." />
+		<meta name="description" content="Alessandro Aglietti, from Firenze, is aqquadro: since 2004 face-to-face to a monitor. Not to write poems! Be RSS: ban social network from life for life." />
 		<title>Alessandro Aglietti</title>
 		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -78,7 +78,7 @@
 				<div class="col-lg-6">
 					<h2><a href="http://aqquadro.it/?r=<?php echo $imageID ?>">.about() <i class="icon-refresh"></i></a></h2>
 					<address>
-						<strong>Alessandro Aglietti</strong>, from Florence, <strong>is aqquadro</strong>: since 2004 <strong>face-to-face to a monitor</strong>. Not to write poems! Be RSS: ban social network from life for life.<br />
+						<strong>Alessandro Aglietti</strong>, from Firenze, <strong>is aqquadro</strong>: since 2004 <strong>face-to-face to a monitor</strong>. Not to write poems! Be RSS: ban social network from life for life.<br />
 						<abbr title="curriculum vitae"><a target="_blank" href="http://cv.alessandroaglietti.com">CV</a></abbr>
 					</address>
 					<div style="text-align:center;"><img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $imageID ?>" class="img-responsive img-thumbnail" alt="rand"></div>
