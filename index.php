@@ -69,7 +69,15 @@
     	<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="navbar-brand">aqquadro</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="http://aqquadro.it">aqquadro</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="http://aqquadro.it/pantheon.php">Pantheon</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>

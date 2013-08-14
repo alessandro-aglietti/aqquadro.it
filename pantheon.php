@@ -58,21 +58,36 @@
     	<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
-					<a class="navbar-brand">aqquadro</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="http://aqquadro.it">aqquadro</a>
+					<div class="nav-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="http://aqquadro.it/pantheon.php">Pantheon</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<p>Riprendendo l'idea di <a target="_blank" href="http://aubreymcfato.com/pantheon/">aubreymcfato</a>.</p>
-				</div>
-			</div>
-			<div class="row">
 				<div class="col-lg-4">
 					<div style="text-align:center;">
-						<h2><a target="_blank" href=""></a></h2>
-						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/pantheon/" class="img-responsive img-thumbnail" alt="rand">
+						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Aaron_Swartz">Aaron Swartz</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/pantheon/0" class="img-responsive img-thumbnail" alt="rand">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Fabrizio_De_Andr%C3%A9">Fabrizio De Andr&eacute;</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/pantheon/1" class="img-responsive img-thumbnail" alt="rand">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Daft_Punk">Daft Punk</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/pantheon/2" class="img-responsive img-thumbnail" alt="rand">
 					</div>
 				</div>
 			</div>
