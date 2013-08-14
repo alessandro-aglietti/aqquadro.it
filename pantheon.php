@@ -5,7 +5,6 @@
 		header("Location: text.php");
 		exit();
 	}
-	$imageID = rand ( 0, 97 );
 	header("Expires: Thu, 04 May 1989 14:00:00 GMT");
 	header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 	header("Cache-Control: no-store, no-cache, must-revalidate");
@@ -18,22 +17,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Alessandro Aglietti, from Firenze, is aqquadro: since 2004 face-to-face to a monitor. Not to write poems! Be RSS: ban social network from life for life." />
-		<title>Alessandro Aglietti</title>
+		<title>Alessandro Aglietti | Pantheon</title>
 		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
-			$(function(){
-				$.ajax({
-					url: "deliciuos.php?r=<?php echo $imageID ?>"
-				}).done(function ( data ) {
-					$("#links").children().last().remove();
-					$("#links").append(data);
-				});
-			});
-		</script>
 		<style type="text/css">
 			#footer {
 				height: 60px;
@@ -75,7 +64,7 @@
 					<a class="navbar-brand" href="http://aqquadro.it">aqquadro</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="http://aqquadro.it/pantheon.php">Pantheon</a></li>
+							<li class="active"><a href="http://aqquadro.it/pantheon.php">Pantheon</a></li>
 						</ul>
 					</div>
 				</div>
@@ -83,17 +72,23 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
-					<h2><a href="http://aqquadro.it/?r=<?php echo $imageID ?>">.about() <i class="icon-refresh"></i></a></h2>
-					<address>
-						<strong>Alessandro Aglietti</strong>, from Firenze, <strong>is aqquadro</strong>: since 2004 <strong>face-to-face to a monitor</strong>. Not to write poems! Be RSS: ban social network from life for life.<br />
-						<abbr title="curriculum vitae"><a target="_blank" href="http://cv.alessandroaglietti.com">CV</a></abbr>
-					</address>
-					<div style="text-align:center;"><img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $imageID ?>" class="img-responsive img-thumbnail" alt="rand"></div>
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Aaron_Swartz">Aaron Swartz</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/pantheon/0" class="img-responsive img-thumbnail" alt="rand">
+					</div>
 				</div>
-				<div class="col-lg-6" id="links">
-					<h2><a target="_blank" href="http://feeds.delicious.com/v2/rss/aqquadro?count=50">.delicious() <i class="icon-rss"></i></a></h2>
-					<p>loading...</p>
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Fabrizio_De_Andr%C3%A9">Fabrizio De Andr&eacute;</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/pantheon/1" class="img-responsive img-thumbnail" alt="rand">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Daft_Punk">Daft Punk</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/pantheon/2" class="img-responsive img-thumbnail" alt="rand">
+					</div>
 				</div>
 			</div>
 		</div>
