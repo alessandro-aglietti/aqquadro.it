@@ -75,7 +75,7 @@
 					<a class="navbar-brand" href="http://aqquadro.it">aqquadro</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="http://aqquadro.it/pantheon.php">Pantheon</a></li>
+							<li><a href="http://aqquadro.it/pantheon.php">Pantheon</a></li>
 						</ul>
 					</div>
 				</div>
