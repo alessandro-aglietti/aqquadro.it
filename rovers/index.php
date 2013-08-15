@@ -75,19 +75,19 @@
 				<div class="col-lg-4">
 					<div style="text-align:center;">
 						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Aaron_Swartz">Aaron Swartz</a></h2>
-						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/pantheon/0" class="img-responsive img-thumbnail" alt="rand">
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/98" class="img-responsive img-thumbnail" alt="rand">
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div style="text-align:center;">
 						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Fabrizio_De_Andr%C3%A9">Fabrizio De Andr&eacute;</a></h2>
-						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/pantheon/1" class="img-responsive img-thumbnail" alt="rand">
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/99" class="img-responsive img-thumbnail" alt="rand">
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div style="text-align:center;">
 						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Daft_Punk">Daft Punk</a></h2>
-						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/pantheon/2" class="img-responsive img-thumbnail" alt="rand">
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/100" class="img-responsive img-thumbnail" alt="rand">
 					</div>
 				</div>
 			</div>
