@@ -2,7 +2,7 @@
 	$headers = getallheaders();
 	if( strrpos(strtolower($headers["User-Agent"]), 'lynx') !== FALSE ) {
 		header("HTTP/1.1 301 Moved Permanently");
-		header("Location: text.php");
+		header("Location: http://aqquadro.it/text.php");
 		exit();
 	}
 	header("Expires: Thu, 04 May 1989 14:00:00 GMT");
@@ -17,7 +17,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Alessandro Aglietti, from Firenze, is aqquadro: since 2004 face-to-face to a monitor. Not to write poems! Be RSS: ban social network from life for life." />
-		<title>Alessandro Aglietti | Pantheon</title>
+		<title>aqquadro rovers</title>
 		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
@@ -64,7 +64,7 @@
 					<a class="navbar-brand" href="http://aqquadro.it">aqquadro</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="http://aqquadro.it/pantheon.php">Pantheon</a></li>
+							<li class="active"><a href="http://aqquadro.it/rovers/">rovers</a></li>
 						</ul>
 					</div>
 				</div>
