@@ -72,7 +72,7 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="http://aqquadro.it">aqquadro</a>
+					<a class="navbar-brand" href="http://aqquadro.it/alessandro.aglietti/">aqquadro</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav navbar-nav">
 							<li><a href="http://aqquadro.it/rovers/">rovers</a></li>
@@ -84,7 +84,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<h2><a href="http://aqquadro.it/?r=<?php echo $imageID ?>">.about() <i class="icon-refresh"></i></a></h2>
+					<h2><a href="http://aqquadro.it/alessandro.aglietti/?r=<?php echo $imageID ?>">.about() <i class="icon-refresh"></i></a></h2>
 					<address>
 						<strong>Alessandro Aglietti</strong>, from Firenze, <strong>is aqquadro</strong>: since 2004 <strong>face-to-face to a monitor</strong>. Not to write poems! Be RSS: ban social network from life for life.<br />
 						<abbr title="curriculum vitae"><a target="_blank" href="http://cv.alessandroaglietti.com">CV</a></abbr>
