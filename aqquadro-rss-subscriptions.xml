@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<opml version="1.0">
+    <head>RSS Notifier Subscriptions</head>
+    <body>
+        <outline htmlUrl="http://www.codebykevin.com/blosxom.cgi" title="Code by Kevin" xmlUrl="http://www.codebykevin.com/blosxom.cgi/index.rss" type="rss" text="Code by Kevin"/>
+        <outline htmlUrl="https://news.ycombinator.com/" title="Hacker News" xmlUrl="https://news.ycombinator.com/rss" type="rss" text="Hacker News"/>
+        <outline htmlUrl="http://thepiratebay.sx/blog" title="The Pirate Bay - Blog" xmlUrl="http://rss.thepiratebay.sx/blog" type="rss" text="The Pirate Bay - Blog"/>
+        <outline htmlUrl="http://antirep.noblogs.org" title="antirep" xmlUrl="http://antirep.noblogs.org/feed/" type="rss" text="antirep"/>
+        <outline htmlUrl="http://android-developers.blogspot.com/" title="Android Developers Blog" xmlUrl="http://android-developers.blogspot.com/atom.xml" type="rss" text="Android Developers Blog"/>
+        <outline htmlUrl="http://aubreymcfato.com" title="Questo blog non esiste" xmlUrl="http://aubreymcfato.com/feed/" type="rss" text="Questo blog non esiste"/>
+        <outline htmlUrl="http://www.esa.int/Our_Activities/Observing_the_Earth" title="ESA Observing the Earth" xmlUrl="http://www.esa.int/rssfeed/EOB" type="rss" text="ESA Observing the Earth"/>
+        <outline htmlUrl="http://www.esa.int/ESA_in_your_country/Italy" title="ESA Italy" xmlUrl="http://www.esa.int/rssfeed/Italy" type="rss" text="ESA Italy"/>
+        <outline htmlUrl="http://cavallette.noblogs.org" title="cavallette" xmlUrl="http://cavallette.noblogs.org/feed" type="rss" text="cavallette"/>
+        <outline htmlUrl="http://www.esa.int/Our_Activities/Launchers" title="ESA Launchers" xmlUrl="http://www.esa.int/rssfeed/LAU" type="rss" text="ESA Launchers"/>
+        <outline htmlUrl="http://www.esa.int/Our_Activities/Navigation" title="ESA Navigation" xmlUrl="http://www.esa.int/rssfeed/NAV" type="rss" text="ESA Navigation"/>
+        <outline htmlUrl="http://www.esa.int/Our_Activities/Operations" title="ESA Operations" xmlUrl="http://www.esa.int/rssfeed/SEMFDZU7D7F" type="rss" text="ESA Operations"/>
+        <outline htmlUrl="http://www.esa.int/" title="ESA Top News" xmlUrl="http://www.esa.int/rssfeed/TopNews" type="rss" text="ESA Top News"/>
+        <outline htmlUrl="http://www.esa.int/Our_Activities/Telecommunications_Integrated_Applications" title="ESA Telecommunications &amp; Integrated Applications" xmlUrl="http://www.esa.int/rssfeed/TEL" type="rss" text="ESA Telecommunications &amp; Integrated Applications"/>
+        <outline htmlUrl="http://www.artisopensource.net" title="[ AOS ] Art is Open Source" xmlUrl="http://www.artisopensource.net/feed/" type="rss" text="[ AOS ] Art is Open Source"/>
+        <outline htmlUrl="http://anoncentral.tumblr.com/" title="Anonymous" xmlUrl="http://anoncentral.tumblr.com/rss" type="rss" text="Anonymous"/>
+        <outline htmlUrl="http://www.10x100.it" title="10x100.it" xmlUrl="http://www.10x100.it/?feed=rss2" type="rss" text="10x100.it"/>
+        <outline htmlUrl="http://aws.typepad.com/aws/" title="Amazon Web Services Blog" xmlUrl="http://feeds.feedburner.com/AmazonWebServicesBlog" type="rss" text="Amazon Web Services Blog"/>
+        <outline htmlUrl="http://127.0.0.1:4567" title="Antirez weblog" xmlUrl="http://antirez.com/rss" type="rss" text="Antirez weblog"/>
+        <outline htmlUrl="http://blog.bitbucket.org" title="BitbucketBitbucket" xmlUrl="http://blog.bitbucket.org/feed/" type="rss" text="BitbucketBitbucket"/>
+        <outline htmlUrl="http://albert-engineering.blogspot.com/" title="Albert" xmlUrl="http://albert-engineering.blogspot.com/feeds/posts/default" type="rss" text="Albert"/>
+        <outline htmlUrl="http://www.ecn.org//antifa/" title="antifa - article" xmlUrl="http://www.ecn.org/antifa/?rss=1&amp;section=article" type="rss" text="antifa - article"/>
+        <outline htmlUrl="http://circoloanarchicofiorentino.noblogs.org" title="Circolo Anarchico Fiorentino" xmlUrl="http://circoloanarchicofiorentino.noblogs.org/feed/" type="rss" text="Circolo Anarchico Fiorentino"/>
+        <outline htmlUrl="http://googlecloudplatform.blogspot.com/" title="Google App Engine Blog" xmlUrl="http://googleappengine.blogspot.com/atom.xml" type="rss" text="Google App Engine Blog"/>
+        <outline htmlUrl="http://googleenterprise.blogspot.com/" title="Google Enterprise Blog" xmlUrl="http://feeds.feedburner.com/OfficialGoogleEnterpriseBlog" type="rss" text="Google Enterprise Blog"/>
+        <outline htmlUrl="http://ortiche.noblogs.org" title="Blog del network di server indipendenti casalinghi e ninja" xmlUrl="http://ortiche.noblogs.org/feed/" type="rss" text="Blog del network di server indipendenti casalinghi e ninja"/>
+        <outline htmlUrl="http://closuretools.blogspot.com/" title="Closure Tools Blog" xmlUrl="http://closuretools.blogspot.com/atom.xml" type="rss" text="Closure Tools Blog"/>
+        <outline htmlUrl="http://googledrive.blogspot.com/" title="Docs Blog" xmlUrl="http://googledocs.blogspot.com/atom.xml" type="rss" text="Docs Blog"/>
+        <outline htmlUrl="http://www.globalproject.info/it/home_page_principale/articles" title="Global Project" xmlUrl="http://www.globalproject.info/it/homepages/1/rss/" type="rss" text="Global Project"/>
+        <outline htmlUrl="http://blog.fogcreek.com" title="Fog Creek Blog" xmlUrl="http://feeds.feedburner.com/FogCreekBlog" type="rss" text="Fog Creek Blog"/>
+        <outline htmlUrl="http://developersitalia.blogspot.com/" title="Developers Italia" xmlUrl="http://developersitalia.blogspot.com/feeds/posts/default" type="rss" text="Developers Italia"/>
+        <outline htmlUrl="http://googlecloudplatform.blogspot.com/" title="Google App Engine Blog" xmlUrl="http://feeds.feedburner.com/GoogleAppEngineBlog" type="rss" text="Google App Engine Blog"/>
+        <outline htmlUrl="http://datanucleus.blogspot.com/" title="DataNucleus" xmlUrl="http://datanucleus.blogspot.com/feeds/posts/default" type="rss" text="DataNucleus"/>
+        <outline htmlUrl="http://googleitalia.blogspot.com/" title="Google Italia Blog" xmlUrl="http://feeds.feedburner.com/GoogleItaliaBlog" type="rss" text="Google Italia Blog"/>
+        <outline htmlUrl="http://googleappsdeveloper.blogspot.com/" title="Google Apps Developer Blog" xmlUrl="http://googleappsdeveloper.blogspot.com/atom.xml" type="rss" text="Google Apps Developer Blog"/>
+        <outline htmlUrl="http://firenze-gtug.blogspot.com/" title="Firenze GTUG - Official Blog" xmlUrl="http://firenze-gtug.blogspot.com/feeds/posts/default" type="rss" text="Firenze GTUG - Official Blog"/>
+        <outline htmlUrl="http://collanediruggine.noblogs.org" title="collanediruggine" xmlUrl="http://collanediruggine.noblogs.org/feed/" type="rss" text="collanediruggine"/>
+        <outline htmlUrl="http://googleappsupdates.blogspot.com/" title="Google Apps update alerts" xmlUrl="http://feeds.feedburner.com/GoogleAppsUpdates" type="rss" text="Google Apps update alerts"/>
+        <outline htmlUrl="http://googlegeodevelopers.blogspot.com/" title="Google Geo Developers Blog" xmlUrl="http://feeds.feedburner.com/blogspot/Gkaos" type="rss" text="Google Geo Developers Blog"/>
+        <outline htmlUrl="http://googledevelopers.blogspot.com/" title="Google Code Blog" xmlUrl="http://googlecode.blogspot.com/atom.xml" type="rss" text="Google Code Blog"/>
+        <outline htmlUrl="http://chrome.blogspot.com/" title="Google Chrome Blog" xmlUrl="http://chrome.blogspot.com/atom.xml" type="rss" text="Google Chrome Blog"/>
+        <outline htmlUrl="http://gae-java-persistence.blogspot.com/" title="Google App Engine Java Persistence" xmlUrl="http://gae-java-persistence.blogspot.com/feeds/posts/default" type="rss" text="Google App Engine Java Persistence"/>
+        <outline htmlUrl="http://googlewebtoolkit.blogspot.com/" title="Google Web Toolkit Blog" xmlUrl="http://googlewebtoolkit.blogspot.com/atom.xml" type="rss" text="Google Web Toolkit Blog"/>
+        <outline htmlUrl="http://google-opensource.blogspot.com/" title="Google Open Source Blog" xmlUrl="http://google-opensource.blogspot.com/atom.xml" type="rss" text="Google Open Source Blog"/>
+        <outline htmlUrl="http://blog.giovanisi.it" title="Giovani" xmlUrl="http://giovani.intoscana.it/?feed=rss2" type="rss" text="Giovani"/>
+        <outline htmlUrl="http://googlewebmastercentral.blogspot.com/" title="Google Webmaster Central Blog" xmlUrl="http://googlewebmastercentral.blogspot.com/atom.xml" type="rss" text="Google Webmaster Central Blog"/>
+        <outline htmlUrl="http://googletalk.blogspot.com/" title="Google Talkabout" xmlUrl="http://googletalk.blogspot.com/atom.xml" type="rss" text="Google Talkabout"/>
+        <outline htmlUrl="http://blog.evernote.com" title="Evernote Blogcast" xmlUrl="http://blog.evernote.com/feed/" type="rss" text="Evernote Blogcast"/>
+        <outline htmlUrl="http://linkcoordinamentouniversitario.it/index.php?option=com_content&amp;view=frontpage" title="Home" xmlUrl="http://www.coordinamentouniversitario.it/index.php?format=feed&amp;type=rss" type="rss" text="Home"/>
+        <outline htmlUrl="http://www.usi-ait.org/index.php/component/content/frontpage" title="Home" xmlUrl="http://www.usi-ait.org/index.php?format=feed&amp;type=rss" type="rss" text="Home"/>
+        <outline htmlUrl="http://memmt.info/site" title="memmt.info" xmlUrl="http://memmt.info/site/feed/" type="rss" text="memmt.info"/>
+        <outline htmlUrl="http://hakim.se/" title="Hakim.se" xmlUrl="http://hakim.se/rss.xml" type="rss" text="Hakim.se"/>
+        <outline htmlUrl="http://hueniverse.com" title="hueniverse" xmlUrl="http://feeds.feedburner.com/Hueniverse" type="rss" text="hueniverse"/>
+        <outline htmlUrl="http://isegretidellacasta.blogspot.com/" title="I segreti della casta di Montecitorio" xmlUrl="http://isegretidellacasta.blogspot.com/feeds/posts/default" type="rss" text="I segreti della casta di Montecitorio"/>
+        <outline htmlUrl="http://anon-news.blogspot.com/" title="Il blog ufficiale di Anonymous Italia" xmlUrl="http://anon-news.blogspot.com/feeds/posts/default" type="rss" text="Il blog ufficiale di Anonymous Italia"/>
+        <outline htmlUrl="http://malfattori.noblogs.org" title="malfattori" xmlUrl="http://malfattori.noblogs.org/feed/" type="rss" text="malfattori"/>
+        <outline htmlUrl="http://infofreeflow.noblogs.org" title="InfoFreeFlow" xmlUrl="http://infofreeflow.noblogs.org/feed/" type="rss" text="InfoFreeFlow"/>
+        <outline htmlUrl="http://ha.ckers.org/blog" title="ha.ckers.org web application security lab" xmlUrl="http://ha.ckers.org/blog/feed/" type="rss" text="ha.ckers.org web application security lab"/>
+        <outline htmlUrl="http://blog.cloudfoundry.com" title="Cloud Foundry" xmlUrl="http://blog.cloudfoundry.com/rss" type="rss" text="Cloud Foundry"/>
+        <outline htmlUrl="http://blog.mashape.com/" title="Mashape's Voice" xmlUrl="http://feeds.feedburner.com/MashapesVoice" type="rss" text="Mashape's Voice"/>
+        <outline htmlUrl="http://www.libreidee.org" title="LIBRE" xmlUrl="http://www.libreidee.org/feed/" type="rss" text="LIBRE"/>
+        <outline htmlUrl="http://mootools.net/blog" title="MooTools" xmlUrl="http://feeds.feedburner.com/mootools-blog" type="rss" text="MooTools"/>
+        <outline htmlUrl="http://www.sosfornace.org" title="SOS FORNACE" xmlUrl="http://www.sosfornace.org/feed/" type="rss" text="SOS FORNACE"/>
+        <outline htmlUrl="" title="Liferay.com" xmlUrl="http://www.liferay.com/c/blogs_aggregator/rss?p_l_id=8440748&amp;companyId=1" type="rss" text="Liferay.com"/>
+        <outline htmlUrl="http://www.radiondadurto.org" title="Radio Onda d'Urto" xmlUrl="http://www.radiondadurto.org/feed" type="rss" text="Radio Onda d'Urto"/>
+        <outline htmlUrl="http://seclists.org/#nmap-announce" title="Nmap Announce" xmlUrl="http://seclists.org/rss/nmap-announce.rss" type="rss" text="Nmap Announce"/>
+        <outline htmlUrl="http://www.comune.sesto-fiorentino.fi.it" title="Sesto Fiorentino - News" xmlUrl="http://www.comune.sesto-fiorentino.fi.it/RSS/News0.xml" type="rss" text="Sesto Fiorentino - News"/>
+        <outline htmlUrl="http://googleblog.blogspot.com/" title="The Official Google Blog" xmlUrl="http://googleblog.blogspot.com/atom.xml" type="rss" text="The Official Google Blog"/>
+        <outline htmlUrl="http://www.inventati.org/cortocircuito" title="CortoCircuito" xmlUrl="http://www.inventati.org/cortocircuito/feed/" type="rss" text="CortoCircuito"/>
+        <outline htmlUrl="https://github.com/blog" title="The GitHub Blog" xmlUrl="https://github.com/blog.atom" type="rss" text="The GitHub Blog"/>
+        <outline htmlUrl="http://www.supportolegale.org" title="Supportolegale" xmlUrl="http://www.supportolegale.org/feed/" type="rss" text="Supportolegale"/>
+        <outline htmlUrl="http://www.informa-azione.info" title="www.informa-azione.info - Controinformazione e lotta alla repressione" xmlUrl="http://www.informa-azione.info/rss.xml" type="rss" text="www.informa-azione.info - Controinformazione e lotta alla repressione"/>
+        <outline htmlUrl="https://blogs.oracle.com/java/" title="The Java Source" xmlUrl="https://blogs.oracle.com/java/feed/entries/rss" type="rss" text="The Java Source"/>
+        <outline htmlUrl="http://packetstormsecurity.com/" title="Packet Storm" xmlUrl="http://rss.packetstormsecurity.com/" type="rss" text="Packet Storm"/>
+        <outline htmlUrl="http://blog.springsource.org" title="SpringSource Team Blog" xmlUrl="http://feeds.feedburner.com/SpringSourceTeamBlog" type="rss" text="SpringSource Team Blog"/>
+        <outline htmlUrl="http://youranonnews.tumblr.com/" title="Your Anon News" xmlUrl="http://youranonnews.tumblr.com/rss" type="rss" text="Your Anon News"/>
+        <outline htmlUrl="http://retecollettivi.noblogs.org" title="Rete dei Collettivi Fiorentini" xmlUrl="http://retecollettivi.noblogs.org/feed/" type="rss" text="Rete dei Collettivi Fiorentini"/>
+        <outline htmlUrl="https://blog.torproject.org/blog" title="The Tor Blog blogs" xmlUrl="https://blog.torproject.org/blog/feed" type="rss" text="The Tor Blog blogs"/>
+        <outline htmlUrl="http://zeroturnaround.com" title="zeroturnaround.com » Blog" xmlUrl="http://zeroturnaround.com/blog/feed" type="rss" text="zeroturnaround.com » Blog"/>
+        <outline htmlUrl="http://www.retedellaconoscenza.it/component/content/frontpage.html" title="rete della conoscenza" xmlUrl="http://www.retedellaconoscenza.it/index.php?format=feed&amp;type=rss" type="rss" text="rete della conoscenza"/>
+        <outline htmlUrl="http://blog.trello.com" title="Trello Blog" xmlUrl="http://blog.trello.com/feed/" type="rss" text="Trello Blog"/>
+        <outline htmlUrl="http://news.infoshop.org" title="Infoshop Top News" xmlUrl="http://news.infoshop.org/backend/news.rss" type="rss" text="Infoshop Top News"/>
+        <outline htmlUrl="http://www.ing.unifi.it/" title="Università degli Studi di Firenze - Facoltà di Ingegneria" xmlUrl="http://www.ing.unifi.it/backend.php" type="rss" text="Università degli Studi di Firenze - Facoltà di Ingegneria"/>
+        <outline htmlUrl="http://www.unionedeglistudenti.net/sito" title="Unione degli Studenti" xmlUrl="http://www.unionedeglistudenti.net/sito/feed/" type="rss" text="Unione degli Studenti"/>
+        <outline htmlUrl="http://www.nove.firenze.it/" title="Nove da Firenze" xmlUrl="http://www.nove.firenze.it/xmlexport/rss.asp?cronaca=1&amp;economia=1&amp;sport=1&amp;lavoro=1&amp;cultura=1&amp;turismo=1&amp;fiorentina=1&amp;imprese=1&amp;howmany=50" type="rss" text="Nove da Firenze"/>
+        <outline htmlUrl="http://www.extendi.it/ruby-on-rails" title="Rails on the road" xmlUrl="http://feeds.feedburner.com/rails-on-the-road" type="rss" text="Rails on the road"/>
+        <outline htmlUrl="http://issues.liferay.com/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=" title="Liferay Issues" xmlUrl="http://issues.liferay.com/sr/jira.issueviews:searchrequest-rss/temp/SearchRequest.xml?jqlQuery=&amp;tempMax=1000" type="rss" text="Liferay Issues"/>
+        <outline htmlUrl="http://127.0.0.1:4567" title="Hacking Italia" xmlUrl="http://hackingitalia.com/rss" type="rss" text="Hacking Italia"/>
+    </body>
+</opml>
