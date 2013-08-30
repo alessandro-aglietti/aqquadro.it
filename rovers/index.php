@@ -92,6 +92,12 @@
 						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/100" class="img-responsive img-thumbnail" alt="rand">
 					</div>
 				</div>
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Giorgio_Ambrosoli">Giorgio Ambrosoli</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/100" class="img-responsive img-thumbnail" alt="rand">
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="footer">
