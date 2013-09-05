@@ -5,7 +5,7 @@
 		header("Location: text.php");
 		exit();
 	}
-	$imageID = rand ( 0, 106 );
+	$imageID = rand ( 0, 108 );
 	header("Expires: Thu, 04 May 1989 14:00:00 GMT");
 	header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 	header("Cache-Control: no-store, no-cache, must-revalidate");
