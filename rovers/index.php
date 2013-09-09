@@ -100,11 +100,26 @@
 						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/104" class="img-responsive img-thumbnail" alt="rand">
 					</div>
 				</div>
-				<div class="col-lg-4"></div>
-				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Salvador_Allende">Salvador Allende</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/110" class="img-responsive img-thumbnail" alt="rand">
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://memoriaaudiovisual.cl/~interac/victimas/?p=1028">Lagos Rios Oscar Reinaldo</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/109" class="img-responsive img-thumbnail" alt="rand">
+					</div>
+				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Luis_Sep%C3%BAlveda">Luis Sep&uacute;lveda</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/111" class="img-responsive img-thumbnail" alt="rand">
+					</div>
+				</div>
 				<div class="col-lg-4"></div>
 				<div class="col-lg-4"></div>
 			</div>
