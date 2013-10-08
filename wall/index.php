@@ -85,17 +85,27 @@
 						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $i ?>" class="img-responsive img-thumbnail" alt="rand">
 					</div>
 				</div>
-				<?php $i++ ?>
+				<?php
+					$i++;
+					if ( $i <= $imageCount) {
+				?>
 				<div class="col-lg-4">
 					<div style="text-align:center;">
 						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $i ?>" class="img-responsive img-thumbnail" alt="rand">
 					</div>
 				</div>
-				<?php $i++ ?>
+				<?php
+					}
+					$i++;
+					if ( $i <= $imageCount) {
+				?>
 				<div class="col-lg-4">
 					<div style="text-align:center;">
 						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $i ?>" class="img-responsive img-thumbnail" alt="rand">
 					</div>
+				<?php
+					}
+				?>
 				</div>
 			</div>
 			<?php

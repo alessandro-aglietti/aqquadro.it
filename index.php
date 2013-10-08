@@ -72,12 +72,14 @@
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="http://aqquadro.it/alessandro.aglietti/">aqquadro</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav navbar-nav">
 							<li><a href="http://aqquadro.it/rovers/">rovers</a></li>
 							<li><a href="http://aqquadro.it/aqquadro-rss-subscriptions.xml">my rss</a></li>
+							<li><a href="http://aqquadro.it/wall">wall</a></li>
 						</ul>
 					</div>
 				</div>
