@@ -68,7 +68,7 @@
 					<div class="nav-collapse collapse">
 						<ul class="nav navbar-nav">
 							<li><a href="http://aqquadro.it/rovers/">rovers</a></li>
-							<li><a href="http://aqquadro.it/aqquadro-rss-subscriptions.xml">my rss</a></li>
+							<li><a href="http://cloud.feedly.com/v3/opml?feedlyToken=AQAAIH17InYiOiJwcm9kdWN0aW9uIiwicCI6MSwiYSI6ImZlZWRseSIsInQiOjEsIngiOiJzdGFuZGFyZCIsImkiOiIxZTBmZDBjMS1hNmFiLTQ4YTEtOGRjNi0wNWFiMDQ3MjQ5YTIiLCJlIjoxMzgxODQwNTAxMzA1fQ">my rss</a></li>
 							<li class="active"><a href="http://aqquadro.it/wall">wall</a></li>
 						</ul>
 					</div>
