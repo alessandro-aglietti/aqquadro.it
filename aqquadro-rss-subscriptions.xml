@@ -110,5 +110,16 @@
         <outline type="rss" text="CortocircuitO" title="CortocircuitO" xmlUrl="http://www.inventati.org/cortocircuito/feed/" htmlUrl="http://www.inventati.org/cortocircuito"/>
         <outline type="rss" text="https://irpi.eu" title="https://irpi.eu" xmlUrl="https://irpi.eu/feed/" htmlUrl="https://irpi.eu"/>
         <outline type="rss" text="ComingSoon.it: I film in uscita prossimamente" title="ComingSoon.it: I film in uscita prossimamente" xmlUrl="http://www.comingsoon.it/rss/rss.asp?feed=filmprossim" htmlUrl="http://www.comingsoon.it/Film/Calendario/"/>
+        <outline type="rss" text="GnuPG.org" title="GnuPG.org" xmlUrl="http://www.gnupg.org/news.it.rss" htmlUrl="http://www.gnupg.org/"/>
+        <outline type="rss" text="sambismo" title="sambismo" xmlUrl="http://sambismo.wordpress.com/feed/" htmlUrl="http://sambismo.wordpress.com"/>
+        <outline type="rss" text="samba RSS feed" title="samba RSS feed" xmlUrl="http://samba.noblogs.org/feed/" htmlUrl="http://samba.noblogs.org"/>
+        <outline type="rss" text="Home" title="Home" xmlUrl="http://red-net.it/index.php?format=feed&amp;type=rss" htmlUrl="http://red-net.it/index.php?option=com_content&amp;view=frontpage"/>
+        <outline type="rss" text="Piano Terra" title="Piano Terra" xmlUrl="http://www.pianoterralab.org/feed/" htmlUrl="http://www.pianoterralab.org"/>
+        <outline type="rss" text="Off Topic »  Comments Feed" title="Off Topic »  Comments Feed" xmlUrl="http://www.offtopiclab.org/contatti/feed/" htmlUrl="http://www.offtopiclab.org"/>
+        <outline type="rss" text="IWA ItalyIWA ITALY (International Webmasters Association Italia)" title="IWA ItalyIWA ITALY (International Webmasters Association Italia)" xmlUrl="http://www.iwa.it/feed/" htmlUrl="http://www.iwa.it"/>
+        <outline type="rss" text="nero" title="nero" xmlUrl="http://nero.noblogs.org/feed/" htmlUrl="http://nero.noblogs.org"/>
+        <outline type="rss" text="bombo stuff" title="bombo stuff" xmlUrl="http://bombo-stuff.noblogs.org/feed/" htmlUrl="http://bombo-stuff.noblogs.org"/>
+        <outline type="rss" text="MilanoX" title="MilanoX" xmlUrl="http://www.milanox.eu/feed/" htmlUrl="http://www.milanox.eu"/>
+        <outline type="rss" text="StudAut" title="StudAut" xmlUrl="http://www.studaut.it/feed/" htmlUrl="http://www.studaut.it"/>
     </body>
 </opml>
