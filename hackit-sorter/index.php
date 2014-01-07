@@ -23,6 +23,8 @@ $stamp = time();
 $ip = $_SERVER['REMOTE_ADDR'];
 
 $insert = "INSERT INTO hackit (ip, stamp, value) VALUES ('" . $ip . "', " . $stamp . ", '" . $rand . "')";
+mysql_query($insert);
+
 
 $hitsQuery = "SELECT COUNT(*) hits FROM hackit";
 
