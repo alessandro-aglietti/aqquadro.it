@@ -3,7 +3,7 @@ error_reporting(E_ALL);
 
 ini_set('display_errors', '1');
 
-$con=mysqli_connect("127.0.0.1","aqquadro","2Jw4ZqRFZ6b6HSeC","aqquadro");
+$con=mysqli_connect("localhost","aqquadro","2Jw4ZqRFZ6b6HSeC","aqquadro");
 
 // Check connection
 if (mysqli_connect_errno()) {
