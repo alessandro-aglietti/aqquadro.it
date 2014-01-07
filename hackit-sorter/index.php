@@ -3,7 +3,8 @@ error_reporting(E_ALL);
 
 ini_set('display_errors', '1');
 
-$con=mysqli_connect("localhost","aqquadro","2Jw4ZqRFZ6b6HSeC","aqquadro");
+$con=mysql_connect("localhost","aqquadro","2Jw4ZqRFZ6b6HSeC");
+mysql_select_db("aqquadro");
 
 // Check connection
 if (mysqli_connect_errno()) {
@@ -41,7 +42,7 @@ $result = mysql_query($hitsQuery);
 $row = mysql_fetch_assoc($result);
 $bohits = $row['hits'];
 
-mysqli_close($con);
+mysql_close($con);
 ?>
 <html>
     <head>
