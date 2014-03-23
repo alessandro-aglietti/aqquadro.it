@@ -46,7 +46,7 @@
 			}
 			
 			#footer div.container {
-				background-image: url('http://www.kopimi.com/kopimi/k/mkopimi_gay.gif');
+				background-image: url('http://aqquadro.it/kopimi-gay.png');
 				background-repeat: no-repeat;
 				background-position-y: 6px;
 			}
@@ -109,7 +109,7 @@
 		</div>
 		<div id="footer">
 			<div class="container">
-				<p class="text-muted credit"><abbr title="http://www.kopimi.com/kopimi/">kopimi</abbr> from <a target="_blank" href="https://github.com/alessandro-aglietti/aqquadro.it">GitHub</a></p>
+				<p class="text-muted credit"><abbr title="https://en.wikipedia.org/wiki/Piratbyr%C3%A5n#Kopimi">kopimi</abbr> from <a target="_blank" href="https://github.com/alessandro-aglietti/aqquadro.it">GitHub</a></p>
 			</div>
 		</div>
     </body>
