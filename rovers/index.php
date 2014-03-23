@@ -18,7 +18,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Alessandro Aglietti, from Firenze, is aqquadro: since 2004 face-to-face to a monitor. Not to write poems! Be RSS: ban social network from life for life." />
 		<title>AA | Rovers</title>
-		<link rel="shortcut icon" type="image/ico" href="http://www.piratbyran.org/favicon.ico" />
+		<link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/b/bd/Telecomix.png" />
 		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
