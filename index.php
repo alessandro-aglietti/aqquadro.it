@@ -49,6 +49,7 @@
 				background-image: url('http://aqquadro.it/kopimi-gay.png');
 				background-repeat: no-repeat;
 				background-position-y: 6px;
+				background-size: 100px;
 			}
 		</style>
 		<script type="text/javascript">
