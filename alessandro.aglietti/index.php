@@ -92,8 +92,13 @@
 					<address>
 						<strong>Alessandro Aglietti</strong>, from Firenze, <strong>is aqquadro</strong>: since 2004 <strong>face-to-face to a monitor</strong>. Not to write poems! Be RSS: ban social network from life for life.<br />
 						<abbr title="curriculum vitae"><a target="_blank" href="http://cv.alessandroaglietti.com">CV</a></abbr>
+						<br />
+						<abbr title="dal database al web"><a target="_blank" href="https://github.com/alessandro-aglietti/itis-leonardo-da-vinci">Dal database al web</a></abbr>
 					</address>
 					<p style="text-align: center;">(a-b) + ((a/b)(b/a)(c-d))</p>
+					<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/27796585&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_artwork=true"></iframe>
+					<br />
+					<br />
 					<div style="text-align:center;"><img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $imageID ?>" class="img-responsive img-thumbnail" alt="rand"></div>
 				</div>
 				<div class="col-lg-6" id="links">
