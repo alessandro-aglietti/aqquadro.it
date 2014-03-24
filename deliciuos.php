@@ -5,7 +5,7 @@
 	header("Cache-Control: post-check=0, pre-check=0", false);
 	header("Pragma: no-cache");
 	
-	$ch = curl_init("http://feeds.delicious.com/v2/json/aqquadro?count=5");
+	$ch = curl_init("http://feeds.delicious.com/v2/json/aqquadro?count=10");
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 	$response = curl_exec($ch);
