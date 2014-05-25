@@ -5,7 +5,7 @@
 		header("Location: http://aqquadro.it/text.php");
 		exit();
 	}
-	$imageCount = 132;
+	$imageCount = 166;
 	header("Expires: Thu, 04 May 1989 14:00:00 GMT");
 	header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 	header("Cache-Control: no-store, no-cache, must-revalidate");
