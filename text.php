@@ -1,5 +1,5 @@
 <?php
-	$imageID = rand ( 0, 166 );
+	$imageID = rand ( 0, 165 );
 ?>
 <html>
 	<head>
