@@ -15,7 +15,7 @@
 	</parent>
 
 	<properties>
-		<appengine.app.version>1-war</appengine.app.version>
+		<appengine.app.version>jersey29</appengine.app.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jersey.target.version>2.9</jersey.target.version>
 	</properties>
