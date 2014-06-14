@@ -13,7 +13,7 @@ import javax.ws.rs.core.UriInfo;
 
 import org.glassfish.jersey.server.mvc.Template;
 
-@Path("/")
+@Path("/noscript")
 public class IndexResource {
 
 	private final static Logger LOGGER = Logger.getLogger(IndexResource.class
