@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
-    <application>aqquadro-hrd</application>
-    <version>${appengine.app.version}</version>
-    <threadsafe>true</threadsafe>
-    
-    <system-properties>
-        <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
-    </system-properties>
+	<application>aqquadro-hrd</application>
+	<version>${appengine.app.version}</version>
+	<threadsafe>true</threadsafe>
+
+	<system-properties>
+		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties" />
+	</system-properties>
+
+	<static-files>
+		<include path="/**.png" />
+		<include path="/**.ico" />
+		<include path="/**.js" />
+		<include path="/**.html" />
+		<include path="/**.txt" />
+		<include path="/**.xml" />
+		<include path="/**.css" />
+	</static-files>
 </appengine-web-app>
