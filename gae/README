@@ -1,0 +1,13 @@
+jMeter NON GUI
+java -jar /Applications/apache-jmeter-2.9/bin/ApacheJMeter.jar -n
+
+Use JMX test plan
+java -jar /Applications/apache-jmeter-2.9/bin/ApacheJMeter.jar -n -t stress.jmx -Jdomain=go1.aqquadro-hrd.appspot.com -Jthreads=50 -Jpath=/api/ -Jduration=1800
+
+java -jar /Applications/apache-jmeter-2.9/bin/ApacheJMeter.jar -n -t stress.jmx -Jdomain=sleep.aqquadro-hrd.appspot.com -Jthreads=50 -Jpath=/noscript -Jduration=1800
+
+java -jar /Applications/apache-jmeter-2.9/bin/ApacheJMeter.jar -n -t stress.jmx -Jdomain=py1.aqquadro-hrd.appspot.com -Jthreads=50 -Jpath=/ -Jduration=1800
+
+java -jar /Applications/apache-jmeter-2.9/bin/ApacheJMeter.jar -n -t stress.jmx -Jdomain=php1.aqquadro-hrd.appspot.com -Jthreads=50 -Jpath=/ -Jduration=1800
+
+tail -f <domain>.csv
