@@ -1,0 +1,2 @@
+Setup PATH
+export PATH=/Volumes/pwny/go_appengine/go_appengine_1.9.6:$PATH
