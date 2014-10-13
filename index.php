@@ -36,7 +36,18 @@
 				
 				$("#clickthis").click(function(eventObject){
 					var randd = Math.floor((Math.random() * 165));
-					$("#tochangeit").attr("src", "https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/" + randd);
+					
+					$(".progress").removeClass("hide").addClass("in");
+					var memfucker = window.setInterval(function(){
+						var rand = Math.floor((Math.random() * 98));
+						$(".progress").css("width", rand + "%");
+					}, 750);
+					
+					
+					$("#tochangeit").attr("src", "https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/" + randd).load(function(){
+						clearInterval(memfucker);
+						$(".progress").addClass("hide").removeClass("in");
+					});
 					$(".alert").removeClass("hide").addClass('in');
 					return false;
 				})
@@ -109,7 +120,11 @@
 					<br />
 					<br />
 					<p style="text-align:center;"><abbr title="Benjamin Franklin"><i>Chi e' pronto a rinunciare alle proprie liberta' fondamentali per comprarsi briciole di temporanea sicurezza non merita ne' la liberta' ne' la sicurezza</i></abbr></p>
-					<div style="text-align:center;"><img id="tochangeit" src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $imageID ?>" class="img-responsive img-thumbnail" alt="rand"></div>
+					<div style="text-align:center;">
+						<div class="progress progress-striped active hide fade">
+						  <div class="bar" style="width: 40%;"></div>
+						</div>
+						<img id="tochangeit" src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $imageID ?>" class="img-responsive img-thumbnail" alt="rand"></div>
 				</div>
 				<div class="col-lg-6" id="links">
 					<h2><a target="_blank" href="http://feeds.delicious.com/v2/rss/aqquadro?count=50">.delicious() <i class="icon-rss"></i></a></h2>
