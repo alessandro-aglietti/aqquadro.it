@@ -121,7 +121,7 @@
 					<br />
 					<p style="text-align:center;"><abbr title="Benjamin Franklin"><i>Chi e' pronto a rinunciare alle proprie liberta' fondamentali per comprarsi briciole di temporanea sicurezza non merita ne' la liberta' ne' la sicurezza</i></abbr></p>
 					<div style="text-align:center;">
-						<div class="progress progress-striped progress-info active hide fade">
+						<div class="progress progress-info progress-striped">
 						  <div class="bar" style="width: 40%;"></div>
 						</div>
 						<img id="tochangeit" src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $imageID ?>" class="img-responsive img-thumbnail" alt="rand"></div>
