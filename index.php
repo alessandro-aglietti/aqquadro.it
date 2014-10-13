@@ -37,7 +37,7 @@
 				$("#clickthis").click(function(eventObject){
 					var randd = Math.floor((Math.random() * 165));
 					$("#tochangeit").attr("src", "https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/" + randd);
-					$(".alert").alert();
+					$(".alert").addClass('in');
 					return false;
 				})
 			});
@@ -122,6 +122,6 @@
 				<p class="text-muted credit"><abbr title="https://en.wikipedia.org/wiki/Piratbyr%C3%A5n#Kopimi">kopimi</abbr> from <a target="_blank" href="https://github.com/alessandro-aglietti/aqquadro.it">GitHub</a></p>
 			</div>
 		</div>
-		<div class="alert fade in"><button type="button" class="close" data-dismiss="alert">×</button><strong>Holy guacamole!</strong> Clickjacking to show random pics!</div>
+		<div class="alert alert-info fade hide"><button type="button" class="close" data-dismiss="alert">×</button><strong>Holy guacamole!</strong> Clickjacking to show random pics!</div>
     </body>
 </html>
