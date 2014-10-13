@@ -33,6 +33,12 @@
 					$("#links").children().last().remove();
 					$("#links").append(data);
 				});
+				
+				$("#clickthis").click(function(eventObject){
+					var randd = Math.floor((Math.random() * 165));
+					$("#tochangeit").attr("src", "https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/" + randd);
+					return false;
+				})
 			});
 		</script>
 		<style type="text/css">
@@ -90,7 +96,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<h2><a href="http://aqquadro.it/alessandro.aglietti/?r=<?php echo $imageID ?>">.about() <i class="icon-refresh"></i></a></h2>
+					<h2><a id="clickthis" href="http://aqquadro.it/alessandro.aglietti/?r=<?php echo $imageID ?>">.about() <i class="icon-refresh"></i></a></h2>
 					<address>
 						<strong>Alessandro Aglietti</strong>, from Firenze, <strong>is aqquadro</strong>: since 2004 <strong>face-to-face to a monitor</strong>. Not to write poems! Be RSS: ban social network from life for life.<br />
 						<abbr title="curriculum vitae"><a target="_blank" href="http://cv.alessandroaglietti.com">CV</a></abbr>
@@ -102,7 +108,7 @@
 					<br />
 					<br />
 					<p style="text-align:center;"><abbr title="Benjamin Franklin"><i>Chi e' pronto a rinunciare alle proprie liberta' fondamentali per comprarsi briciole di temporanea sicurezza non merita ne' la liberta' ne' la sicurezza</i></abbr></p>
-					<div style="text-align:center;"><img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $imageID ?>" class="img-responsive img-thumbnail" alt="rand"></div>
+					<div style="text-align:center;"><img id="tochangeit" src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $imageID ?>" class="img-responsive img-thumbnail" alt="rand"></div>
 				</div>
 				<div class="col-lg-6" id="links">
 					<h2><a target="_blank" href="http://feeds.delicious.com/v2/rss/aqquadro?count=50">.delicious() <i class="icon-rss"></i></a></h2>
