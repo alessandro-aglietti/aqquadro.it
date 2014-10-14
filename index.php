@@ -40,7 +40,7 @@
 					$(".progress").removeClass("hide").addClass("in");
 					var memfucker = window.setInterval(function(){
 						var rand = Math.floor((Math.random() * 98));
-						$(".progress").css("width", rand + "%");
+						$(".progress-bar-striped").css("width", rand + "%");
 					}, 750);
 					
 					
@@ -121,8 +121,10 @@
 					<br />
 					<p style="text-align:center;"><abbr title="Benjamin Franklin"><i>Chi e' pronto a rinunciare alle proprie liberta' fondamentali per comprarsi briciole di temporanea sicurezza non merita ne' la liberta' ne' la sicurezza</i></abbr></p>
 					<div style="text-align:center;">
-						<div class="progress progress-info progress-striped">
-						  <div class="bar" style="width: 40%;"></div>
+						<div class="progress hide fade">
+						  <div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+						    <span class="sr-only">@_@</span>
+						  </div>
 						</div>
 						<img id="tochangeit" src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $imageID ?>" class="img-responsive img-thumbnail" alt="rand"></div>
 				</div>
