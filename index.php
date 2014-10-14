@@ -123,7 +123,7 @@
 					<div style="text-align:center;">
 						<div class="progress hide fade">
 						  <div class="progress-bar progress-bar-striped active"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-						    <span class="sr-only">@_@</span>
+						    <span class="sr-only">:(){ :|:&amp; };:</span>
 						  </div>
 						</div>
 						<img id="tochangeit" src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/<?php echo $imageID ?>" class="img-responsive img-thumbnail" alt="rand"></div>
