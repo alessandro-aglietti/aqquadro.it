@@ -7,7 +7,6 @@ import javax.ws.rs.ApplicationPath;
 import org.glassfish.jersey.CommonProperties;
 import org.glassfish.jersey.filter.LoggingFilter;
 import org.glassfish.jersey.server.ResourceConfig;
-import org.glassfish.jersey.server.ServerProperties;
 import org.glassfish.jersey.server.mvc.beanvalidation.MvcBeanValidationFeature;
 import org.glassfish.jersey.server.mvc.mustache.MustacheMvcFeature;
 
