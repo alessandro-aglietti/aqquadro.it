@@ -130,6 +130,7 @@
 				</div>
 				<div class="col-lg-6" id="links">
 					<h2><a target="_blank" href="http://feeds.delicious.com/v2/rss/aqquadro?count=50">.delicious() <i class="icon-rss"></i></a></h2>
+					<img src="/evolution_bike.png" class="img-responsive img-thumbnail" alt="evolution_bike.png">
 					<p>loading...</p>
 				</div>
 			</div>
