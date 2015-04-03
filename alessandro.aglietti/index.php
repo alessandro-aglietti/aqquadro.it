@@ -96,6 +96,8 @@
 						<abbr title="curriculum vitae"><a target="_blank" href="http://cv.alessandroaglietti.com">CV</a></abbr>
 						<br />
 						<abbr title="dal database al web"><a target="_blank" href="https://github.com/alessandro-aglietti/itis-leonardo-da-vinci">Dal database al web</a></abbr>
+						<br />
+						<abbr title="Stack Overflow Careers"><a target="_blank" href="http://careers.stackoverflow.com/alessandroaglietti">Stack Overflow</a></abbr>
 					</address>
 					<p style="text-align: center;">(a-b) + ((a/b)(b/a)(c-d))</p>
 					<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/27796585&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_artwork=true"></iframe>
