@@ -114,6 +114,8 @@
 						<abbr title="curriculum vitae"><a target="_blank" href="http://cv.alessandroaglietti.com">CV</a></abbr>
 						<br />
 						<abbr title="dal database al web"><a target="_blank" href="https://github.com/alessandro-aglietti/itis-leonardo-da-vinci">Dal database al web</a></abbr>
+						<br />
+						<abbr title="Stack Overflow Careers"><a target="_blank" href="http://careers.stackoverflow.com/alessandroaglietti">Stack Overflow</a></abbr>
 					</address>
 					<p style="text-align: center;">(a-b) + ((a/b)(b/a)(c-d))</p>
 					<p style="text-align:center;"><abbr title="Benjamin Franklin"><i>Chi e' pronto a rinunciare alle proprie liberta' fondamentali per comprarsi briciole di temporanea sicurezza non merita ne' la liberta' ne' la sicurezza</i></abbr></p>
