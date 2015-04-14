@@ -124,7 +124,12 @@
 						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/111" class="img-responsive img-thumbnail" alt="rand">
 					</div>
 				</div>
-				<div class="col-lg-4"></div>
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://en.wikipedia.org/wiki/Jon_Postel">Jon Postel</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/Jon_Postel.jpg" class="img-responsive img-thumbnail" alt="rand">
+					</div>
+				</div>
 				<div class="col-lg-4"></div>
 			</div>
 		</div>
