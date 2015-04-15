@@ -119,15 +119,35 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4">
-						<div style="text-align:center;">
-							<h2><a target="_blank" href="http://en.wikipedia.org/wiki/Jacob_Appelbaum">Jacob Appelbaum</a></h2>
-							<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/Jacob_Appelbaum.jpg" class="img-responsive img-thumbnail" alt="rand">
-						</div>
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://it.wikipedia.org/wiki/Luis_Sep%C3%BAlveda">Luis Sep&uacute;lveda</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/111" class="img-responsive img-thumbnail" alt="rand">
 					</div>
+				</div>
 				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://en.wikipedia.org/wiki/Jon_Postel">Jon Postel</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/Jon_Postel.jpg" class="img-responsive img-thumbnail" alt="rand">
 					</div>
+				</div>
 				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://en.wikipedia.org/wiki/Ken_Thompson">Ken Thompson</a> <a target="_blank" href="http://en.wikipedia.org/wiki/Dennis_Ritchie">Dennis Ritchie</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/Ken_n_dennis.jpg" class="img-responsive img-thumbnail" alt="rand">
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div style="text-align:center;">
+						<h2><a target="_blank" href="http://en.wikipedia.org/wiki/Jacob_Appelbaum">Jacob Appelbaum</a></h2>
+						<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/Jacob_Appelbaum.jpg" class="img-responsive img-thumbnail" alt="rand">
+					</div>
+				</div>
+				<div class="col-lg-4">
+				</div>
+				<div class="col-lg-4">
+				</div>
 			</div>
 		</div>
 		<div id="footer">
