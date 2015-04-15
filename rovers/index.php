@@ -138,6 +138,18 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-lg-4">
+				<div style="text-align:center;">
+					<h2><a target="_blank" href="http://en.wikipedia.org/wiki/Jacob_Appelbaum">Jacob Appelbaum</a></h2>
+					<img src="https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/Jacob_Appelbaum.jpg" class="img-responsive img-thumbnail" alt="rand">
+				</div>
+			</div>
+			<div class="col-lg-4">
+			</div>
+			<div class="col-lg-4">
+			</div>
+		</div>
 		<div id="footer">
 			<div class="container">
 				<p class="text-muted credit"><abbr title="http://www.kopimi.com/kopimi/">kopimi</abbr> from <a target="_blank" href="https://github.com/alessandro-aglietti/aqquadro.it">GitHub</a></p>
