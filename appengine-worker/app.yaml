@@ -1,5 +1,5 @@
-application: helloworld
-version: 1
+application: aqquadro-hrd
+version: go-static-worker
 runtime: go
 api_version: go1
 
