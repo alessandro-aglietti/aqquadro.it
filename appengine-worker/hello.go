@@ -43,7 +43,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
   var deliciousData []DeliciousDataModel
 
-  err := json.Unmarshal(deliciousBytes, &deliciousData)
+  err = json.Unmarshal(deliciousBytes, &deliciousData)
   if err != nil {
     log.Errorf(c, "json error: %v", err)
     http.Error(w, err.Error(), http.StatusInternalServerError)
