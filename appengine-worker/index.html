@@ -18,7 +18,7 @@
 				$("#tochangeit").attr("src", "https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/" + randd);
 
 				$.ajax({
-					url: "delicious.html"
+					url: "delicious.html?nocache=" + (new Date().getTime())
 				}).done(function ( data ) {
 					$("#links").children().last().remove();
 					$("#links").append(data);
