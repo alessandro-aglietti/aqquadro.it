@@ -5,17 +5,16 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="Alessandro Aglietti, from Firenze, is aqquadro: since 2004 face-to-face to a monitor. Not to write poems! Be RSS: ban social network from life for life." />
 		<title>Alessandro Aglietti</title>
-		<link rel="shortcut icon" type="image/ico" href="http://piratbyran.org/favicon.ico" />
-		<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
-		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css">
-		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
-        <script type="text/javascript">
+		<script src="js/jquery-1.10.1.min.js"></script>
+		<script src="js/jquery-migrate-1.2.1.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
 			$(function(){
 
-				var randd = Math.floor((Math.random() * 98));
-				$("#tochangeit").attr("src", "https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/" + randd);
+				var randd = Math.floor((Math.random() * 168));
+				$("#tochangeit").attr("src", "pics/" + randd);
 
 				$.ajax({
 					url: "delicious.html?nocache=" + (new Date().getTime())
@@ -23,18 +22,18 @@
 					$("#links").children().last().remove();
 					$("#links").append(data);
 				});
-				
+
 				$("#clickthis").click(function(eventObject){
-					var randd = Math.floor((Math.random() * 165));
-					
+					var randd = Math.floor((Math.random() * 168));
+
 					$(".progress").removeClass("hide").addClass("in");
 					var memfucker = window.setInterval(function(){
 						var rand = Math.floor((Math.random() * 98));
 						$(".progress-bar-striped").css("width", rand + "%");
 					}, 750);
-					
-					
-					$("#tochangeit").attr("src", "https://googledrive.com/host/0B-udBnWnmH6JSGFEemdZbl9WX2c/" + randd).load(function(){
+
+
+					$("#tochangeit").attr("src", "pics/" + randd).load(function(){
 						clearInterval(memfucker);
 						$(".progress").addClass("hide").removeClass("in");
 					});
@@ -53,7 +52,7 @@
 				margin: 20px 0;
 				text-align: center;
 			}
-			
+
 			#footer div.container {
 				background-image: url('kopimi-gay.png');
 				background-repeat: no-repeat;
