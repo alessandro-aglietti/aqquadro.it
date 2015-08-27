@@ -81,7 +81,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
   wc := storage.NewWriter(ctx, "www.aqquadro.it", "delicious.html")
   wc.ContentType = "text/html"
-  wc.ACL = []storage.ACLRule{{storage.AllUsers, storage.RoleReader}}
+  wc.ContentEncoding = "UTF-8"
+  wc.ACL = []storage.ACLRule{{storage.AllUsers, storage.RoleReader},{"user-alessandro.aglietti@gmail.com", storage.RoleOwner}}
   if _, err := wc.Write([]byte(docString)); err != nil {
       log.Errorf(c, "wc.Write error: %v", err)
       http.Error(w, err.Error(), http.StatusInternalServerError)
