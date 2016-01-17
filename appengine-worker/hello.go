@@ -61,7 +61,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
   tmpl.Execute(&doc, deliciousData)
   var docString = doc.String();
 
-  jwt, err := ioutil.ReadFile("aqquadro-hrd-e9c7a4d18539.json")
+  jwt, err := ioutil.ReadFile("aqquadro-hrd-a301b0a436c9.json")
   if err != nil {
     log.Errorf(c, "jwt error: %v", err)
     http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -79,7 +79,11 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
   ctx := cloud.NewContext(appengine.AppID(c), storageclient)
 
-  wc := storage.NewWriter(ctx, "www.aqquadro.it", "delicious.html")
+  gsclient, err := storage.NewClient(c)
+
+  wc := gsclient.Bucket("www.aqquadro.it").Object("delicious.html").NewWriter(ctx)
+
+  //wc := storage.NewWriter(ctx, "www.aqquadro.it", "delicious.html")
   wc.ContentType = "text/html"
   wc.ContentEncoding = "UTF-8"
   wc.ACL = []storage.ACLRule{{storage.AllUsers, storage.RoleReader},{"user-alessandro.aglietti@gmail.com", storage.RoleOwner}}
