@@ -1,5 +1,5 @@
 application: aqquadro-hrd
-version: go-static-worker
+version: go-static-worker-v2
 runtime: go
 api_version: go1
 
