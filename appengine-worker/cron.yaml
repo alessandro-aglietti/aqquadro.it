@@ -2,3 +2,4 @@ cron:
 - description: polling delicious every 30 minutes
   url: /
   schedule: every 30 minutes
+  target: go-static-worker-v2
