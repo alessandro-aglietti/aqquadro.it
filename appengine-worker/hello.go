@@ -41,33 +41,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
   client := urlfetch.Client(c)
 
-  resp, err := client.Get("http://feeds.delicious.com/v2/json/aqquadro?count=10")
-  if err != nil {
-    http.Error(w, err.Error(), http.StatusInternalServerError)
-    return
-  }
-
-  deliciousBytes, err := ioutil.ReadAll(resp.Body)
-  if err != nil {
-    http.Error(w, err.Error(), http.StatusInternalServerError)
-    return
-  }
-
-  type DeliciousDataModel struct {
-  	Title string `json:"d"`
-  	Comment string `json:"n"`
-  	Url string `json:"u"`
-  }
-
-  var deliciousData []DeliciousDataModel
-
-  err = json.Unmarshal(deliciousBytes, &deliciousData)
-  if err != nil {
-    log.Errorf(c, "json error: %v", err)
-    http.Error(w, err.Error(), http.StatusInternalServerError)
-    return
-  }
-
   tmpl, err := template.ParseFiles("delicious.html")
   if err != nil {
     log.Errorf(c, "tmpl error: %v", err)
@@ -75,26 +48,29 @@ func handler(w http.ResponseWriter, r *http.Request) {
     return
   }
 
+  req, err := http.NewRequest("GET", "https://api.delicious.com/v1/posts/recent", nil)
+  req.Header.Add("Authorization", "")
 
   respFeed, err := client.Get("http://feeds.delicious.com/v2/rss/aqquadro")
   if err != nil {
     http.Error(w, err.Error(), http.StatusInternalServerError)
     return
   }
-XMLdata, err := ioutil.ReadAll(respFeed.Body)
-if err != nil {
-  http.Error(w, err.Error(), http.StatusInternalServerError)
-  return
-}
-rss := new(Rss)
-bufferRss := bytes.NewBuffer(XMLdata)
-decodedRss := xml.NewDecoder(bufferRss)
-err = decodedRss.Decode(rss)
+
+  XMLdata, err := ioutil.ReadAll(respFeed.Body)
+  if err != nil {
+    http.Error(w, err.Error(), http.StatusInternalServerError)
+    return
+  }
+  rss := new(Rss)
+  bufferRss := bytes.NewBuffer(XMLdata)
+  decodedRss := xml.NewDecoder(bufferRss)
+  err = decodedRss.Decode(rss)
 
   var doc bytes.Buffer
   tmpl.Execute(&doc, rss.Channel.Items)
   var docString = doc.String();
-log.Errorf(c, "docString: %v", docString)
+  //log.Errorf(c, "docString: %v", docString)
 
   jwt, err := ioutil.ReadFile("aqquadro-hrd-a301b0a436c9.json")
   if err != nil {
