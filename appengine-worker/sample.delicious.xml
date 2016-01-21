@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<posts tag="" user="aqquadro">
+	<post description="backdoor in IRC code · Issue #1 · alerj78/lucky7coin · GitHub"
+		extended="oh yes! oh yes! #rce #bitcoin" hash="05e8c1f96607959ac8946a70be56b57d"
+		href="https://github.com/alerj78/lucky7coin/issues/1" private="no"
+		shared="yes" tag="" time="2016-01-18T13:11:57Z" />
+	<post description="Meet Ransom32: The first JavaScript ransomware | Emsisoft Blog"
+		extended="Meet the dark side... again!" hash="30d7791db22b5295b6831721c7aad989"
+		href="http://blog.emsisoft.com/2016/01/01/meet-ransom32-the-first-javascript-ransomware/"
+		private="no" shared="yes" tag="" time="2016-01-17T23:16:53Z" />
+	<post
+		description="Dutch govt says no to backdoors, slides $540k into OpenSSL without breaking eye contact • The Register"
+		extended="important for the confidence of people in digital products and services and for the Dutch economy in light of the rapidly evolving digital society"
+		hash="380060b3cebfd1708f50873f664ff621"
+		href="http://www.theregister.co.uk/2016/01/04/dutch_government_says_no_to_backdoors/?mt=1452082275540"
+		private="no" shared="yes" tag="" time="2016-01-17T23:11:42Z" />
+	<post description="Run Express server in your browser" extended=""
+		hash="0d6941704d357cae53c00859ddae970a"
+		href="https://glebbahmutov.com/blog/run-express-server-in-your-browser/"
+		private="no" shared="yes" tag="" time="2016-01-17T23:07:33Z" />
+	<post description="Ask me anything book" extended="#AMA is now in our libraries!"
+		hash="1d4c69bf392a71bac6d4ec706e3b471d" href="http://askmeanythingbook.com/"
+		private="no" shared="yes" tag="" time="2016-01-17T23:07:20Z" />
+	<post description=""
+		extended="Welcome to the pre-backend! #serviceworker is here! #chrome #html5 #js"
+		hash="c1a509d9aa5c98713c0789be688a3bcd" href="https://glebbahmutov.com/blog/instant-web-application/"
+		private="no" shared="yes" tag="" time="2016-01-17T23:03:25Z" />
+	<post description="Gotoky - smart Walkie Talkie"
+		extended="and... the #hamradio is back in the town! Paired with a smartphone of curse..!"
+		hash="ad1e0e3dee614a1921e3206a6279b8d6" href="http://www.gotoky.com/"
+		private="no" shared="yes" tag="" time="2016-01-17T22:56:15Z" />
+	<post
+		description="First known hacker-caused power outage signals troubling escalation | Ars Technica"
+		extended="[...] group behind BlackEnergy, which iSIGHT has dubbed the Sandworm gang [...] - 1337 story or simply gov?"
+		hash="3ffe0e25ca334a98598eb2d0e53d89fb"
+		href="http://arstechnica.com/security/2016/01/first-known-hacker-caused-power-outage-signals-troubling-escalation/"
+		private="no" shared="yes" tag="" time="2016-01-17T15:52:43Z" />
+	<post description="'Ghost fleet' graveyard reborn as nature sanctuary - CNN.com"
+		extended="the world without us - a true story" hash="274138b9c3d5533ec59193194d5bb39a"
+		href="http://edition.cnn.com/2016/01/08/sport/ghost-fleet-graveyard-nature-green-environment-sanctuary/index.html"
+		private="no" shared="yes" tag="" time="2016-01-17T15:48:54Z" />
+	<post
+		description="BetterCap and the first REAL DoubleDirect ICMP Redirect Attack - Simone Margaritelli"
+		extended="fully automated and full duplexICMP Redirect MITM attack - what else?!"
+		hash="62180e62409f45bfd7877ff486eef02e"
+		href="http://www.evilsocket.net/2016/01/10/bettercap-and-the-first-real-icmp-redirect-attack/"
+		private="no" shared="yes" tag="" time="2016-01-17T15:43:14Z" />
+	<post
+		description="Create an anonymous Signal phone number w/ Android – Focus Determines Reality"
+		extended="#anon with a #phone - not so easy! #freeradio" hash="7ca4bf8050fdf53a3e6d82914fdf5435"
+		href="https://yawnbox.com/index.php/2015/03/14/create-an-anonymous-textsecure-and-redphone-phone-number/"
+		private="no" shared="yes" tag="" time="2016-01-17T15:39:05Z" />
+	<post description="Oh Boy, The Cloud « ASCII by Jason Scott"
+		extended="The ability to store your crap in multiple locations? Awesome. The ability to restore your crap to your crap device so you never lose your crap? Perfect."
+		hash="31dd8f32088970bf9868726380d7746f" href="http://ascii.textfiles.com/archives/2229"
+		private="no" shared="yes" tag="" time="2015-12-21T22:07:31Z" />
+	<post description="ASCII by Jason Scott / FUCK THE CLOUD"
+		extended="If you are playing it, you are a sucker. #cloud" hash="803a47542af418f4fc9c1098dc638390"
+		href="http://ascii.textfiles.com/archives/1717" private="no" shared="yes"
+		tag="" time="2015-12-21T21:52:22Z" />
+	<post description="Pirate Bay Founder: ‘I Have Given Up’ | Motherboard"
+		extended="We have to fix #society, before we can #fix the #internet. That’s the only thing. Thank you @brokep #hope this append"
+		hash="913717ec17536ba805c09cc331cf44d5"
+		href="http://motherboard.vice.com/read/pirate-bay-founder-peter-sunde-i-have-given-up"
+		private="no" shared="yes" tag="" time="2015-12-18T20:19:20Z" />
+	<post description="Skype screen off monitor on Lubuntu 11.10 - Skype Community"
+		extended="You can move it via keyboard hitting ALT+left click mouse on any part of the window, can't you?"
+		hash="869b9eb5d263a5737d10e2d4b54e0d3c"
+		href="http://community.skype.com/t5/Linux-archive/Skype-screen-off-monitor-on-Lubuntu-11-10/td-p/1672927"
+		private="no" shared="yes"
+		tag="ALT+LEFT CLICK... WAT ELSE* Connection #1 to host api.del.icio.us left intact
+!?!"
+		time="2015-11-23T15:20:19Z" />
+</posts>
