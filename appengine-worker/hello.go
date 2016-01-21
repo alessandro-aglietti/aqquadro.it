@@ -15,23 +15,6 @@ import (
     "encoding/xml"
 )
 
-type Rss struct {
-         Channel Channel `xml:"channel"`
- }
-
- type Item struct {
-         Title       string `xml:"title"`
-         Link        string `xml:"link"`
-         Description string `xml:"description"`
- }
-
- type Channel struct {
-         Title       string `xml:"title"`
-         Link        string `xml:"link"`
-         Description string `xml:"description"`
-         Items       []Item `xml:"item"`
- }
-
 func init() {
     http.HandleFunc("/", handler)
 }
@@ -41,76 +24,110 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
   client := urlfetch.Client(c)
 
-  tmpl, err := template.ParseFiles("delicious.html")
+//https://golang.org/pkg/net/http/#pkg-index
+//https://github.com/domainersuitedev/delicious-api/blob/master/api/posts.md#v1postsget
+  req, err := http.NewRequest("GET", "https://api.del.icio.us/v1/posts/recent?red=api&count=10", nil)
+
+  deliciousAuthJsonFile, err := ioutil.ReadFile("./delicious.feed.sucks")
   if err != nil {
-    log.Errorf(c, "tmpl error: %v", err)
+    log.Errorf(c, "ioutil.ReadFile: %v", err)
     http.Error(w, err.Error(), http.StatusInternalServerError)
     return
   }
-
-  req, err := http.NewRequest("GET", "https://api.delicious.com/v1/posts/recent", nil)
-  req.Header.Add("Authorization", "")
-
-  respFeed, err := client.Get("http://feeds.delicious.com/v2/rss/aqquadro")
-  if err != nil {
-    http.Error(w, err.Error(), http.StatusInternalServerError)
-    return
+  type deliciousJsonobject struct {
+    Username string `json:"user"`
+    Password string `json:"pwd"`
   }
+  var deliciousJsonType deliciousJsonobject
+  json.Unmarshal(deliciousAuthJsonFile, &deliciousJsonType)
+  log.Errorf(c, "deliciousJsonType: %v", deliciousJsonType)
 
-  XMLdata, err := ioutil.ReadAll(respFeed.Body)
-  if err != nil {
-    http.Error(w, err.Error(), http.StatusInternalServerError)
-    return
-  }
-  rss := new(Rss)
-  bufferRss := bytes.NewBuffer(XMLdata)
-  decodedRss := xml.NewDecoder(bufferRss)
-  err = decodedRss.Decode(rss)
+  req.SetBasicAuth(deliciousJsonType.Username, deliciousJsonType.Password)
 
-  var doc bytes.Buffer
-  tmpl.Execute(&doc, rss.Channel.Items)
-  var docString = doc.String();
-  //log.Errorf(c, "docString: %v", docString)
 
-  jwt, err := ioutil.ReadFile("aqquadro-hrd-a301b0a436c9.json")
-  if err != nil {
-    log.Errorf(c, "jwt error: %v", err)
-    http.Error(w, err.Error(), http.StatusInternalServerError)
-    return
-  }
 
-  conf, err := google.JWTConfigFromJSON(jwt, storage.ScopeFullControl)
-  if err != nil {
-    log.Errorf(c, "conf error: %v", err)
-    http.Error(w, err.Error(), http.StatusInternalServerError)
-    return
-  }
+  respFeed, err := client.Do(req)
+  //log.Errorf(c, "respFeed: %v", respFeed)
 
-  storageclient := conf.Client(c)
-
-  ctx := cloud.NewContext(appengine.AppID(c), storageclient)
-
-  gsclient, err := storage.NewClient(c)
-  if err != nil {
-    log.Errorf(c, "storage.NewClient error: %v", err)
-    http.Error(w, err.Error(), http.StatusInternalServerError)
-    return
-  }
-
-  wc := gsclient.Bucket("www.aqquadro.it").Object("delicious.html").NewWriter(ctx)
-
-  //wc := storage.NewWriter(ctx, "www.aqquadro.it", "delicious.html")
-  wc.ContentType = "text/html"
-  wc.ContentEncoding = "UTF-8"
-  wc.ACL = []storage.ACLRule{{storage.AllUsers, storage.RoleReader},{"user-alessandro.aglietti@gmail.com", storage.RoleOwner}}
-  if _, err := wc.Write([]byte(docString)); err != nil {
-      log.Errorf(c, "wc.Write error: %v", err)
+  if ( respFeed.StatusCode == 200 ) {
+    XMLdata, err := ioutil.ReadAll(respFeed.Body)
+    if err != nil {
+      log.Errorf(c, "ioutil.ReadAll: %v", err)
       http.Error(w, err.Error(), http.StatusInternalServerError)
       return
-  }
-  if err := wc.Close(); err != nil {
-      log.Errorf(c, "wc.Close error: %v", err)
+    }
+
+    type Post struct {
+            Title       string `xml:"description,attr"`
+            Link        string `xml:"href,attr"`
+            Description string `xml:"extended,attr"`
+    }
+
+type Posts struct {
+         Posts []Post `xml:"post"`
+ }
+
+
+
+    rss := new(Posts)
+    bufferRss := bytes.NewBuffer(XMLdata)
+    //log.Errorf(c, "bufferRss: %v", bufferRss.String())
+    decodedRss := xml.NewDecoder(bufferRss)
+    err = decodedRss.Decode(rss)
+    log.Errorf(c, "rss: %v", rss)
+
+    tmpl, err := template.ParseFiles("delicious.html")
+    if err != nil {
+      log.Errorf(c, "tmpl error: %v", err)
       http.Error(w, err.Error(), http.StatusInternalServerError)
       return
+    }
+
+    var doc bytes.Buffer
+    tmpl.Execute(&doc, rss.Posts)
+    var docString = doc.String();
+    //log.Errorf(c, "docString: %v", docString)
+
+    jwt, err := ioutil.ReadFile("aqquadro-hrd-a301b0a436c9.json")
+    if err != nil {
+      log.Errorf(c, "jwt error: %v", err)
+      http.Error(w, err.Error(), http.StatusInternalServerError)
+      return
+    }
+
+    conf, err := google.JWTConfigFromJSON(jwt, storage.ScopeFullControl)
+    if err != nil {
+      log.Errorf(c, "conf error: %v", err)
+      http.Error(w, err.Error(), http.StatusInternalServerError)
+      return
+    }
+
+    storageclient := conf.Client(c)
+
+    ctx := cloud.NewContext(appengine.AppID(c), storageclient)
+
+    gsclient, err := storage.NewClient(c)
+    if err != nil {
+      log.Errorf(c, "storage.NewClient error: %v", err)
+      http.Error(w, err.Error(), http.StatusInternalServerError)
+      return
+    }
+
+    wc := gsclient.Bucket("www.aqquadro.it").Object("delicious.html").NewWriter(ctx)
+
+    //wc := storage.NewWriter(ctx, "www.aqquadro.it", "delicious.html")
+    wc.ContentType = "text/html"
+    wc.ContentEncoding = "UTF-8"
+    wc.ACL = []storage.ACLRule{{storage.AllUsers, storage.RoleReader},{"user-alessandro.aglietti@gmail.com", storage.RoleOwner}}
+    if _, err := wc.Write([]byte(docString)); err != nil {
+        log.Errorf(c, "wc.Write error: %v", err)
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+        return
+    }
+    if err := wc.Close(); err != nil {
+        log.Errorf(c, "wc.Close error: %v", err)
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+        return
+    }
   }
 }
