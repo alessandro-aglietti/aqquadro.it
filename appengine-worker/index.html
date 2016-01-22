@@ -16,12 +16,13 @@
 				var randd = Math.floor((Math.random() * 168));
 				$("#tochangeit").attr("src", "pics/" + randd);
 
+        /*
 				$.ajax({
 					url: "delicious.html?nocache=" + (new Date().getTime())
 				}).done(function ( data ) {
 					$("#links").children().last().remove();
 					$("#links").append(data);
-				});
+				});*/
 
 				$("#clickthis").click(function(eventObject){
 					var randd = Math.floor((Math.random() * 168));
