@@ -76,7 +76,7 @@ type Posts struct {
     err = decodedRss.Decode(rss)
     log.Errorf(c, "rss: %v", rss)
 
-    tmpl, err := template.ParseFiles("delicious.html")
+    tmpl, err := template.ParseFiles("index.html")
     if err != nil {
       log.Errorf(c, "tmpl error: %v", err)
       http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -113,7 +113,7 @@ type Posts struct {
       return
     }
 
-    wc := gsclient.Bucket("www.aqquadro.it").Object("delicious.html").NewWriter(ctx)
+    wc := gsclient.Bucket("www.aqquadro.it").Object("index.html").NewWriter(ctx)
 
     //wc := storage.NewWriter(ctx, "www.aqquadro.it", "delicious.html")
     wc.ContentType = "text/html"
