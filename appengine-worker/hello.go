@@ -13,6 +13,8 @@ import (
     "google.golang.org/cloud"
     "google.golang.org/cloud/storage"
     "encoding/xml"
+    "compress/gzip"
+    "time"
 )
 
 func init() {
@@ -66,9 +68,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 type Posts struct {
          Posts []Post `xml:"post"`
  }
-
-
-
     rss := new(Posts)
     bufferRss := bytes.NewBuffer(XMLdata)
     //log.Errorf(c, "bufferRss: %v", bufferRss.String())
@@ -114,12 +113,26 @@ type Posts struct {
     }
 
     wc := gsclient.Bucket("www.aqquadro.it").Object("index.html").NewWriter(ctx)
-
-    //wc := storage.NewWriter(ctx, "www.aqquadro.it", "delicious.html")
+    // old writer wc := storage.NewWriter(ctx, "www.aqquadro.it", "delicious.html")
     wc.ContentType = "text/html"
-    wc.ContentEncoding = "UTF-8"
+    //wc.ContentEncoding = "UTF-8"
+    wc.ContentEncoding = "gzip"
     wc.ACL = []storage.ACLRule{{storage.AllUsers, storage.RoleReader},{"user-alessandro.aglietti@gmail.com", storage.RoleOwner}}
-    if _, err := wc.Write([]byte(docString)); err != nil {
+
+    // gzipppp
+    var gzippedbytes bytes.Buffer
+    gz := gzip.NewWriter(&gzippedbytes)
+    if _, err := gz.Write([]byte(docString)); err != nil {
+        log.Errorf(c, "gz.Write error: %v", err)
+    }
+    if err := gz.Flush(); err != nil {
+        log.Errorf(c, "gz.Flush error: %v", err)
+    }
+    if err := gz.Close(); err != nil {
+        log.Errorf(c, "wc.Close error: %v", err)
+    }
+
+    if _, err := wc.Write(gzippedbytes.Bytes()); err != nil {
         log.Errorf(c, "wc.Write error: %v", err)
         http.Error(w, err.Error(), http.StatusInternalServerError)
         return
@@ -129,5 +142,24 @@ type Posts struct {
         http.Error(w, err.Error(), http.StatusInternalServerError)
         return
     }
+
+    // update sitemappa
+    // YYYY-MM-DDThh:mm:ssTZD
+    t := time.Now()
+  	loc, _ := time.LoadLocation("CET")
+    t.In(loc)
+
+    sitemaptmpl, err := template.ParseFiles("sitemap.xml")
+    if err != nil {
+      log.Errorf(c, "tmpl error: %v", err)
+      http.Error(w, err.Error(), http.StatusInternalServerError)
+      return
+    }
+
+    var sitemaBuffer bytes.Buffer
+    sitemaptmpl.Execute(&sitemaBuffer, t.Format(time.RFC3339))
+    var siteMapString = sitemaBuffer.String();
+
+    log.Errorf(c, "sitemap: %v", siteMapString)
   }
 }
