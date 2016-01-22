@@ -125,7 +125,11 @@
 					<h2><a target="_blank" href="http://feeds.delicious.com/v2/rss/aqquadro?count=50">.delicious() <i class="icon-rss"></i></a></h2>
 					<div style="text-align: center;"><img src="evolution_bike.png" class="img-responsive img-thumbnail" alt="evolution_bike.png" style="
 					  "></div>
-					<p>loading...</p>
+            <span></span>
+            {{ range . }}
+            <blockquote><p>{{ .Description }}<br /><small><a target="_blank" href="{{ .Link }}">{{ .Title }}</a></small></p></blockquote>
+            {{ end }}
+            <blockquote><p>more del.icio.us</p><small><a target="_blank" href="https://delicious.com/aqquadro">aqquadro @ del.icio.us</a></small></blockquote>
 				</div>
 			</div>
 		</div>
