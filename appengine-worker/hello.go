@@ -15,6 +15,7 @@ import (
     "encoding/xml"
     "compress/gzip"
     "time"
+    "strings"
 )
 
 func init() {
@@ -67,6 +68,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 type Posts struct {
          Posts []Post `xml:"post"`
+         Ts          string
  }
     rss := new(Posts)
     bufferRss := bytes.NewBuffer(XMLdata)
@@ -82,8 +84,18 @@ type Posts struct {
       return
     }
 
+    // non usare l'array sotto rss.Posts ma passare rss
+
+    t := time.Now()
+  	loc, _ := time.LoadLocation("Europe/Rome")
+    t.In(loc)
+    _, summerOffset := t.Zone()
+    t = t.Add(time.Duration(summerOffset)*time.Second)
+    rss.Ts = t.Format(time.RFC3339)
+
+
     var doc bytes.Buffer
-    tmpl.Execute(&doc, rss.Posts)
+    tmpl.Execute(&doc, rss)
     var docString = doc.String();
     //log.Errorf(c, "docString: %v", docString)
 
@@ -145,9 +157,6 @@ type Posts struct {
 
     // update sitemappa
     // YYYY-MM-DDThh:mm:ssTZD
-    t := time.Now()
-  	loc, _ := time.LoadLocation("CET")
-    t.In(loc)
 
     sitemaptmpl, err := template.ParseFiles("sitemap.xml")
     if err != nil {
@@ -157,9 +166,31 @@ type Posts struct {
     }
 
     var sitemaBuffer bytes.Buffer
-    sitemaptmpl.Execute(&sitemaBuffer, t.Format(time.RFC3339))
+    sitemaptmpl.Execute(&sitemaBuffer, rss.Ts)
     var siteMapString = sitemaBuffer.String();
+    siteMapString = strings.Replace(siteMapString, "&lt;", "<", -1)
 
     log.Errorf(c, "sitemap: %v", siteMapString)
+
+
+
+    wc = gsclient.Bucket("www.aqquadro.it").Object("sitemap.xml").NewWriter(ctx)
+    // old writer wc := storage.NewWriter(ctx, "www.aqquadro.it", "delicious.html")
+    wc.ContentType = "text/xml"
+    wc.ContentEncoding = "UTF-8"
+    wc.ACL = []storage.ACLRule{{storage.AllUsers, storage.RoleReader},{"user-alessandro.aglietti@gmail.com", storage.RoleOwner}}
+
+    byteArray := []byte(siteMapString)
+    _, err = wc.Write(byteArray)
+    if err != nil {
+        log.Errorf(c, "wc.Write error: %v", err)
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+        return
+    }
+    if err := wc.Close(); err != nil {
+        log.Errorf(c, "wc.Close error: %v", err)
+        http.Error(w, err.Error(), http.StatusInternalServerError)
+        return
+    }
   }
 }
