@@ -20,9 +20,4 @@
     <lastmod>2016-01-26T11:44:01Z</lastmod>
     <changefreq>yearly</changefreq>
   </url>
-  <url>
-    <loc>http://feeds.delicious.com/v2/rss/aqquadro?count=50</loc>
-    <lastmod>{{.}}</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
 </urlset>
