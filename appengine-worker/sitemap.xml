@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.aqquadro.it/index.html</loc>
+    <lastmod>{{.}}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.aqquadro.it/rovers/index.html</loc>
+    <lastmod>2016-01-26T11:44:01Z</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://tail.aqquadro.it/</loc>
+    <lastmod>2016-01-26T11:44:01Z</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.aqquadro.it/aqquadro-rss-subscriptions.xml</loc>
+    <lastmod>2016-01-26T11:44:01Z</lastmod>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>http://feeds.delicious.com/v2/rss/aqquadro?count=50</loc>
+    <lastmod>{{.}}</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>
