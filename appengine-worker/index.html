@@ -20,12 +20,17 @@
             // magic while
             while ((randd = Math.floor((Math.random() * 168))) && !RANDED.includes(randd) ) {
                 RANDED.push(randd);
-                console.log(randd);
+                //console.log(randd);
                 return randd;
             }
           }
 
-  				$("#tochangeit").attr("src", "pics/" + nextUniqueRand());
+          var randd = nextUniqueRand();
+          if ( randd === undefined ) {
+            $("#tochangeit").attr("src", "data:image/png;base64,yourbrowserdorandwrong");
+          } else {
+  				  $("#tochangeit").attr("src", "pics/" + randd);
+          }
 
   				$("#clickthis").click(function(eventObject){
   					var randd = nextUniqueRand();
@@ -36,11 +41,14 @@
   						$(".progress-bar-striped").css("width", rand + "%");
   					}, 750);
 
-
-  					$("#tochangeit").attr("src", "pics/" + randd).load(function(){
-  						clearInterval(memfucker);
-  						$(".progress").addClass("hide").removeClass("in");
-  					});
+            if ( randd === undefined ) {
+              $("#tochangeit").attr("src", "data:image/png;base64,yourbrowserdorandwrong");
+            } else {
+    					$("#tochangeit").attr("src", "pics/" + randd).load(function(){
+    						clearInterval(memfucker);
+    						$(".progress").addClass("hide").removeClass("in");
+    					});
+            }
   					$(".alert").removeClass("hide").addClass('in');
   					return false;
   				})
@@ -104,13 +112,11 @@
   				<div class="col-lg-6">
   					<h2><a id="clickthis" href="#">.about() <i class="icon-refresh"></i></a></h2>
   					<address>
-  						<strong>Alessandro Aglietti</strong>, from Firenze, <strong>is aqquadro</strong>: since 2004 <strong>face-to-face to a monitor</strong>. Not to write poems! Be RSS: ban social network from life for life.<br />
-  						<abbr title="curriculum vitae"><a target="_blank" href="http://cv.alessandroaglietti.com">CV</a></abbr>
-  						<br />
-  						<abbr title="dal database al web"><a target="_blank" href="https://github.com/alessandro-aglietti/itis-leonardo-da-vinci">Dal database al web</a></abbr>
-  						<br />
-  						<abbr title="Stack Overflow Careers"><a target="_blank" href="http://careers.stackoverflow.com/alessandroaglietti">Stack Overflow</a></abbr>
-  					</address>
+  						<strong>Alessandro Aglietti</strong>, from Firenze, <strong>is aqquadro</strong>: since 2004 <strong>face-to-face to a monitor</strong>. Not to write poems! Be RSS: ban social network from life for life.
+            </address>
+  						<p><abbr title="curriculum vitae"><a target="_blank" href="http://cv.alessandroaglietti.com">CV</a></abbr></p>
+  						<p><abbr title="dal database al web"><a target="_blank" href="https://github.com/alessandro-aglietti/itis-leonardo-da-vinci">Dal database al web</a></abbr></p>
+  						<p><abbr title="Stack Overflow Careers"><a target="_blank" href="http://careers.stackoverflow.com/alessandroaglietti">Stack Overflow</a></abbr></p>
   					<p style="text-align: center;">(a-b) + ((a/b)(b/a)(c-d))</p>
   					<p style="text-align:center;"><abbr title="Benjamin Franklin"><i>Chi e' pronto a rinunciare alle proprie liberta' fondamentali per comprarsi briciole di temporanea sicurezza non merita ne' la liberta' ne' la sicurezza</i></abbr></p>
   					<div style="text-align:center;">
@@ -119,7 +125,7 @@
   						    <span class="sr-only">:(){ :|:&amp; };:</span>
   						  </div>
   						</div>
-  						<img id="tochangeit" src="" class="img-responsive img-thumbnail" alt="rand"></div>
+  						<img id="tochangeit" src="" class="img-responsive img-thumbnail" alt="your browser do rand wrong"></div>
   						<br />
   						<br />
   					<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/27796585&amp;color=ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_artwork=true"></iframe>
