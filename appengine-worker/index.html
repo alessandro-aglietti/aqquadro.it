@@ -1,5 +1,11 @@
 <html lang="en">
     <head>
+      <!--
+        ########################################################################
+        If you want to know how this site is built read the article below cheers
+        https://tail.aqquadro.it/your-site-on-google-cloud-storage-19a93d31736d
+        #######################################################################
+      -->
   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
   		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -14,20 +20,27 @@
       <script>
       var RANDED = [];
   			$(function(){
+          if (typeof console !== "undefined" && typeof console.log !== "undefined") {
+              console.log("########################################################################");
+              console.log("If you want to know how this site is built read the article below cheers");
+              console.log("https://tail.aqquadro.it/your-site-on-google-cloud-storage-19a93d31736d");
+              console.log("#######################################################################");
+          }
 
           function nextUniqueRand(){
             var randd = 0;
             // magic while
-            while ((randd = Math.floor((Math.random() * 168))) && !RANDED.includes(randd) ) {
+            while ((randd = Math.floor(Math.random() * 169 + 1)) && !RANDED.includes(randd) ) {
                 RANDED.push(randd);
                 //console.log(randd);
-                return randd;
+                break;
             }
+            return randd;
           }
 
           var randd = nextUniqueRand();
           if ( randd === undefined ) {
-            $("#tochangeit").attr("src", "data:image/png;base64,yourbrowserdorandwrong");
+            $("#tochangeit").attr("src", "data:image/png;base64,waityourbrowserdoingrand");
           } else {
   				  $("#tochangeit").attr("src", "pics/" + randd);
           }
@@ -42,7 +55,7 @@
   					}, 750);
 
             if ( randd === undefined ) {
-              $("#tochangeit").attr("src", "data:image/png;base64,yourbrowserdorandwrong");
+              $("#tochangeit").attr("src", "data:image/png;base64,waityourbrowserdoingrand");
             } else {
     					$("#tochangeit").attr("src", "pics/" + randd).load(function(){
     						clearInterval(memfucker);
