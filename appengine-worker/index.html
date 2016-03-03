@@ -28,13 +28,19 @@
           }
 
           function nextUniqueRand(){
-            var randd = 0;
-            // magic while
-            while ((randd = Math.floor(Math.random() * 169 + 1)) && !RANDED.includes(randd) ) {
-                RANDED.push(randd);
-                //console.log(randd);
-                break;
+            TOT = 169;
+            if ( RANDED.length == TOT) {
+              // restart
+              RANDED = [];
             }
+
+            var randd = 0;
+            // kansas city while
+            while ((randd = Math.floor(Math.random() * TOT  + 1)) && RANDED.includes(randd) ) {
+            }
+
+            RANDED.push(randd);
+
             return randd;
           }
 
