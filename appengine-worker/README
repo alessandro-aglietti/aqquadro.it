@@ -1,0 +1,6 @@
+Clonare e poi configurare le variabili d'ambiente
+export PATH=$PATH:/home/on/Documents/go_appengine_sdk_linux_amd64-1.9.46/
+export GOPATH=/home/on/Documents/go_appengine_sdk_linux_amd64-1.9.46/gopath/
+
+Poi installare le dipendenze
+goapp get google.golang.org/appengine/log google.golang.org/appengine/urlfetch golang.org/x/oauth2/google google.golang.org/cloud google.golang.org/cloud/storage google.golang.org/appengine
